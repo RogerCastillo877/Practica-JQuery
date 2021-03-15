@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicios JQuery</title>
+    <script src="js/jquery-3.6.0.min.js" type="text/javascript"></script>
+
+    $('elementos a seleccionar')
+    $('div');
+    $('#mielemento');
+    <!-- Seleccionar clases -->
+    $('.miclase');
+    <!-- selecciona todos los elementos de la etiqueta -->
+    $('#padre li');
+    <!-- Selecciona hijos directos -->
+    $('#padre > li');
+    <!-- Selecciona todos los a con la etiqueta navegacion -->
+    $('li a.navegacion');
+    <!-- Selecciona seudoclases -->
+    $('a:first');
+    $('a:nth-child(2)');
+    <!-- Seleccion de multiples elementos -->
+    $('a,p');
+
+    <script type="text/javascript">
+        // Estoy indicando a jQuery que me seleccione los elementos que encuentre dentro de mi HTML que tengan como id azul.
+        $('#azul');
+        
+        //Estoy guardando en una variable una selección mediante jQuery que está escogiendo el div con ID azul dentro de mi estructura HTML. Al guardar en variable, me ahorro el volver a ejecutar la búsqueda entre todos los elementos de mi HTML, optimizando recursos.
+        var $miSeleccion = $('#azul');
+
+
+        //Para comprobar que estoy haciendo bien la selección, saco el resultado de la variable por consola de navegador.
+        console.log($miSeleccion);
+
+        // Para poder seleccionar elementos, tengo todos los selectores CSS disponibles que soporte el navegador, más los que añade jQuery. http://api.jquery.com/category/selectors/
+   
+    </script>
+</head>
+<body>
+    <div id="azul"></div>
+	<div id="rojo"></div>
+	<div id="verde"></div>
+	<div id="amarillo"></div>
+</body>
+</html>

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicios JQuery</title>
+    <script src="js/jquery-3.6.0.min.js" type="text/javascript"></script>
+    <link rel="stylesheet" href="css/integrando_css.css">
+
+
+    <script type="text/javascript">
+
+        //Estoy indicando que quiero esperar a que todo el documento esté cargado para poder trabajar con mis funciones.
+        $(document).ready(function()
+        {
+        // Añado la propiedad CSS font-size con un valor de 25px. Si no estuviese definida, automáticamente jQuery la añade.
+        $('#azul').css('font-size','25px');
+
+        // Añado diferentes propiedades CSS de una sóla vez. Hay que fijarse correctamente en la construcción.
+        $('#azul').css({
+            'font-size':'13px',
+            'font-style': 'italic',
+            'color':'#888888'
+            });
+        
+        //Selecciono el elemento con ID amarillo y añado la clase extra para incluir sus propiedades cuando vea el HTML en el navegador.
+        $('#amarillo').addClass('extra');
+
+        //Selecciono el elemento con ID amarillo y elimino la clase extra para que no la pinte el navegador.
+        $('#amarillo').removeClass('extra');
+        });
+    </script>
+
+</head>
+<body>
+    <div id="azul">
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque congue pellentesque ipsum ac accumsan. Curabitur vehicula laoreet neque vitae tincidunt. Nunc accumsan in nibh ut convallis. Nam non euismod diam, fringilla ullamcorper turpis. </p>
+    </div>
+
+    <div id="rojo">
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque congue pellentesque ipsum ac accumsan. Curabitur vehicula laoreet neque vitae tincidunt. Nunc accumsan in nibh ut convallis. Nam non euismod diam, fringilla ullamcorper turpis. </p>
+    </div>
+
+    <div id="verde">
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque congue pellentesque ipsum ac accumsan. Curabitur vehicula laoreet neque vitae tincidunt. Nunc accumsan in nibh ut convallis. Nam non euismod diam, fringilla ullamcorper turpis. </p>
+    </div>
+    
+    <div id="amarillo" class="extra">
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque congue pellentesque ipsum ac accumsan. Curabitur vehicula laoreet neque vitae tincidunt. Nunc accumsan in nibh ut convallis. Nam non euismod diam, fringilla ullamcorper turpis. </p>
+    </div>
+
+</body>
+</html>

@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicios JQuery</title>
+    <script src="js/jquery-3.6.0.min.js" type="text/javascript"></script>
+    <link rel="stylesheet" href="css/integrando_css.css">
+
+
+    <script type="text/javascript">
+
+        //Estoy indicando que quiero esperar a que todo el documento esté cargado para poder trabajar con mis funciones.
+        $(document).ready(function()
+
+        {
+        // Guardo en una variable el contenido de tipo texto que encuentre dentro del elemento con ID azul.
+        var $texto = $('#azul').text();
+
+        // Selecciono el elemento con ID negro y le incluyo el texto que tenía guardado en la variable anterior.
+         $('#negro').text($texto); 
+
+         // Guardo en una variable el contenido HTML que encuentr dentro del elemento con Id azul.
+         var $html = $('#azul').html();
+
+         // Selecciono el elemento con ID negro y le incluyo el código HTML que tengo guardado en la variable anterior.
+         $('#negro').html($html); 
+
+         // Añado una frase AL FINAL del elemento seleccionado. Puedo incluir etiquetado HTML.
+         $('#rojo').append('Esta será la frase que añadimos al contenido');
+
+         // Añado una frase AL PRINCIPIO del elemento seleccionado. Puedo incluir etiquetado HTML.
+         $('#rojo').prepend('Esta será la frase que añadimos al contenido');
+
+        // Añado contenido DESPUÉS del elemento seleccionado. Puedo incluir etiquetado HTML.
+        $('#rojo').after('<div id="naranja"><p>Esta sería una frase que añadimos al contenido</p></div>');
+
+        // Añado contenido ANTES del elemento seleccionado. Puedo incluir etiquetado HTML.
+        $('#rojo').after('<div id="naranja"><p>Esta sería una frase que añadimos al contenido</p></div>');
+        });
+
+    </script>
+
+</head>
+<body>
+    <div id="azul">
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque congue pellentesque ipsum ac accumsan. Curabitur vehicula laoreet neque vitae tincidunt. Nunc accumsan in nibh ut convallis. Nam non euismod diam, fringilla ullamcorper turpis. </p>
+    </div>
+
+    <div id="rojo">
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque congue pellentesque ipsum ac accumsan. Curabitur vehicula laoreet neque vitae tincidunt. Nunc accumsan in nibh ut convallis. Nam non euismod diam, fringilla ullamcorper turpis. </p>
+    </div>
+
+    <div id="verde">
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque congue pellentesque ipsum ac accumsan. Curabitur vehicula laoreet neque vitae tincidunt. Nunc accumsan in nibh ut convallis. Nam non euismod diam, fringilla ullamcorper turpis. </p>
+    </div>
+    
+    <div id="amarillo" class="extra">
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque congue pellentesque ipsum ac accumsan. Curabitur vehicula laoreet neque vitae tincidunt. Nunc accumsan in nibh ut convallis. Nam non euismod diam, fringilla ullamcorper turpis. </p>
+    </div>
+
+</body>
+</html>

@@ -1,0 +1,37 @@
+#azul {
+
+	background-color: #3498db;
+	
+}
+
+#rojo {
+
+	background-color: #c0392b;
+
+}
+
+#verde {
+
+	background-color: #2ecc71;
+
+}
+
+#amarillo {
+
+	background-color:#f1c40f;
+
+}
+
+.extra {
+
+	border: 3px solid #336699;
+	width: 400px;
+	margin: 0 auto;
+}
+
+p {
+
+font-family: arial, helvetica;
+padding: 50px;
+
+}
