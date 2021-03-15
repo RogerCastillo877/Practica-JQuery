@@ -12,15 +12,15 @@ El orden de los archivos deberia ser
 
 ## Plugins utilizados en los ejemplos
 
-SlidesJS
-FlexSlider
-ImageLens
-Backstrech
-ScrollUp
-AnimateScroll
-OnePageScroll
-StellarJS
-JoyRide
-Waypoints
+- SlidesJS
+- FlexSlider
+- ImageLens
+- Backstrech
+- ScrollUp
+- AnimateScroll
+- OnePageScroll
+- StellarJS
+- JoyRide
+- Waypoints
 
-En el archivo de recursos interesantes hay links que pueden ayudar en diferentes desarrollos
+`En el archivo de **links_interesantes** hay enlaces a más herramientas que pueden ayudar en diferentes desarrollos`

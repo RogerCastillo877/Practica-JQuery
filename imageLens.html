@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>ImageLens</title>
+	<meta name="description" content="">
+
+
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/joyride-2.1.css">
+	<link href="https://fonts.googleapis.com/css2?family=Kite+One&family=Lato:wght@300;400;700&display=swap" rel="stylesheet" type='text/css'>
+
+	<script src="js/jquery-1.10.2.min.js"></script>
+	<script src="js/jquery.imageLens.js"></script>
+	<script src="js/jquery.joyride-2.1.js"></script>
+
+	<script>		
+		$(document).ready(function(){
+			$("#ejemplo").imageLens();
+			$("#ejemplo1").imageLens({ lensSize: 300 });
+			$("#ejemplo2").imageLens({ imageSrc: "img/05.jpg", lensSize: 120 });
+			
+			$('#miTour').joyride({
+         		 autoStart : true
+         		// 'tipLocation': 'bottom',         // 'top' or 'bottom' in relation to parent
+				//  'nubPosition': 'auto',           // override on a per tooltip bases
+				//  'scrollSpeed': 300,              // Page scrolling speed in ms
+				//  'timer': 2000,                   // 0 = off, all other numbers = time(ms) 
+				//  'startTimerOnClick': true,       // true/false to start timer on first click
+				//  'nextButton': true,              // true/false for next button visibility
+				//  'tipAnimation': 'pop',           // 'pop' or 'fade' in each tip
+				//  'pauseAfter': [],                // array of indexes where to pause the tour after
+				//  'tipAnimationFadeSpeed': 300,    // if 'fade'- speed in ms of transition
+				//  'cookieMonster': true,           // true/false for whether cookies are used
+				//  'cookieName': 'JoyRide',         // choose your own cookie name
+				//  'cookieDomain': false,           // set to false or yoursite.com
+				//  'tipContainer': body,            // Where the tip be attached if not inline
+				//  'postRideCallback': $noop,       // a method to call once the tour closes
+				//  'postStepCallback': $noop        // A method to call after each step
+        	});
+		});		
+	</script>
+</head>
+<body>
+	<div id="container">
+		<header>
+			<div id="header-content">
+				<img id="logo" src="img/Logo Tosko-01.png" alt="Logo de tosko" href="index.html">
+				<h1><a href="index.html">Tosko</a></h1>				
+				<nav>
+					<ul>
+						<li><a href="index.html">Inicio</a></li>
+					</ul>
+				</nav>
+			</div>
+		</header>
+
+		<section>
+			<h3>Mi imageLens</h3>
+			<div id="imageLens">
+					<p><img id="ejemplo" src="img/04.jpg" width="400" height="250" /></p>
+					<p><img id="ejemplo1" src="img/04.jpg" width="400" height="250" /></p>
+					<p><img id="ejemplo2" src="img/04.jpg" width="400" height="250" /></p>
+			</div>			
+		</section>
+	</div>
+
+	<!-- Tour -->
+	<ol id="miTour" style="display: none" >
+		<li data-id="ejemplo" data-button="Siguiente" data-options="tipLocation:top">
+		<p>Bienvenido. En esta imagen puede ver un acercamiento con el puntero del mouse.</p>
+		</li>
+		
+		<li data-id="ejemplo1" data-button="Siguiente: Acerca de" data-options="tipLocation:top">
+		<p>Ahora en esta imagen el aumento es mucho mayor.</p>
+		</li>
+		
+		<li data-id="ejemplo2" data-button="Siguiente: Galería" data-options="tipLocation:top">
+		<p>Aquí puede observar un mensaje oculto</p>
+		</li>
+	</ol>
+  <!-- /Tour -->
+</body>
+</html>

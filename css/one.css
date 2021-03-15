@@ -1,0 +1,155 @@
+body, div, h1, h2, h3, h4, h5, h6, p, ul, ol, li, dl, dt, dd, img, form, fieldset, input, textarea, blockquote {
+	margin: 0; padding: 0; border: 0;
+}
+a {
+	color: #72696E;
+	text-decoration: none;
+}
+a:hover {
+	color: #6CF0E9;
+}
+body {
+	background: #fff;
+	font-size: 16px;
+	font-family: "Lato", sans-serif;
+	color: #72696E;
+}
+/* Cabecera donde va el logo y el menu */
+header {
+	height: 100px;
+	width: 100%;
+	background: #ffffff;
+	z-index: 10;
+}
+#header-content {
+	width: 1000px; margin: 0 auto; 
+	padding: 35px 0 0 0;
+}
+#header-content h1 {
+	float: left;
+	font-size: 35px;
+	height: 60px;
+	font-family: "Kite One";
+	letter-spacing: -1px;
+}
+#logo {
+	width: 50px;
+    float: left;
+	margin: -2px -60px;
+}
+h1 > a {
+	color: #72696E;
+}	
+#header-content nav {
+	float: right;
+}
+#header-content nav li {
+	text-transform: uppercase;
+	float: left;
+	font-size: 16px;
+	font-weight: 100;
+	margin: 0 0 0 50px;
+	list-style: none;
+}
+section {
+	background: #f1f1f1;
+	width: 100%;
+}
+
+section > h3 {
+ 	width: 100%;
+ 	text-align: center;
+ 	font-family: "Lato";
+ 	font-size: 16px;
+ 	text-transform: uppercase;
+ 	color: #333333;
+ 	padding: 25px 0 25px 0; 
+ 	background-color: #fff;
+ 	margin: 0 auto;
+}
+
+#primeraseccion, #segundaseccion, #terceraseccion {
+	width: 100%; 
+	margin: 0 auto;
+	height: 800px;
+}
+
+#primeraseccion p, #segundaseccion p, #terceraseccion p {	
+	padding: 70px 50px 110px 40px;
+}
+
+#primeraseccion {
+	background: url(../img/08.jpg);
+	background-size: cover;
+	color: #fff;
+}
+
+#segundaseccion {
+	background: url(../img/09.jpg);
+	color: #fff;
+	background-size: cover;
+}
+
+#terceraseccion {
+	background: url(../img/10.jpg);
+	background-size: cover;
+	color: #fff;
+}
+
+.azul {
+	background-color: #2c3e50;
+	width: 400px;
+	opacity: 0.5;
+}
+
+.rojo {
+	background-color: #d2394f;
+	width: 400px;
+	opacity: 0.5;
+}
+
+.verde {
+	background-color: #a0cb38;
+	width: 400px;
+	opacity: 0.8;
+}
+/* Bloque flotantes */
+#bloqueflotante {
+	position: absolute;
+	padding: 30px;
+	width: 300px;
+	height: 80px;
+	right: 40px;
+	top: 80px;
+	opacity: 0.8;
+	background: #34495e;
+}
+#bloqueflotante2 {
+	position: absolute;
+	padding: 50px;
+	border-radius: 4px;
+	width: 300px;
+	height: 100px;
+	right: 290px;
+	top: 700px;
+	opacity: 0.5;
+	background:#e74c3c;
+}
+#bloqueflotante3 {
+	position: absolute;
+	padding: 50px;
+	border-radius: 4px;
+	width: 200px;
+	height: 100px;
+	right: 200px;
+	top: 900px;
+	opacity: 0.5;
+	background:#2ecc71;
+}
+h3 {
+	color: #fff;
+	font-weight: 100;
+	font-family: "Lato";
+	font-size: 30px;
+}
+

@@ -1,115 +1,117 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ejercicios con diferentes plugging</title>
-    <meta name="description" content="">
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Ejercicios con JQuery</title>
+	<meta name="description" content="">
 
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/flexslider.css">
-    <script src="js/jquery-1.10.2.min.js"></script>
-    <script src="js/jquery.slides.min.js"></script>
-    <script src="js/jquery.flexslider-min.js"></script>
-    
-    <!-- Script para la pasarela de imágenes -->
-    <script>
-        $(document).ready(function(){    
-            /* Se agrega paginación y botones de navegación automáticamente, además es responsive */
-            /*$("#slides").slidesjs({
-                width: 640,
-                height: 480
-            });*/
-            /* Se pueden manipular argumento se anula la paginación y se agrega un efecto */
-           /* $("#slides").slidesjs({
-                width: 640,
-                height: 480,
-                pagination: false,
-                navigation: {
-                    effect: "fade"
-                }
-            });*/
-            /* Se añade un intervalo automático */
-            $("#slides").slidesjs({
-                width: 640,
-                height: 480,
-                play: {
-                    auto: true,
-                    interval: 5000,
-                    effect: "fade"    
-                },
-                pagination: false,
-                navigation: {
-                    effect: "fade"
-                }
-            });
-        });
-    </script>
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link href="https://fonts.googleapis.com/css2?family=Kite+One&family=Lato:wght@300;400;700&display=swap" rel="stylesheet" type='text/css'>
 
-    <!---->
-    <script>
-		$(window).load(function() {
+	<script src="js/jquery-1.10.2.min.js"></script>
+	<script src="js/waypoints.min.js"></script>
+	<script src="js/jquery.scrollUp.min.js"></script>
+	<script src="js/animatescroll.js"></script>
+	<script src="js/jquery.flexslider-min.js"></script>
+	
+	<script>
+		$(document).ready(function(){
+
+			$.scrollUp({
+				animation: "slide",
+				scrollText: 'Ir arriba'				    				   
+			});
+
+			// Acción clic en el elemento con ID menuAcerca, el scroll se desplace de manera animada hasta el elemento con ID acercaDe.
+			$('#menuAcerca').click(function(){
+				$('#acercaDe').animatescroll()
+			});
+
+			// Jquery para la galeria que se mueve
+			$('#fakeGallery').waypoint(function() {  				
+				  $('#fakeGallery > li:last').slideUp(4000);
+				  $('#fakeGallery > li:first').css({
+					  '-webkit-transition': '3s',
+					  '-webkit-transform':'rotate(7deg)'
+				  });				
+			},  { offset: 200 });
+		 });
+
+		 $(window).load(function() {
 			$('.flexslider').flexslider({
 			animation: "slide"
 			});
 		});
-
-		/*$(window).load(function() {
-			$('.flexslider').flexslider({
-			animation: "slide",
-			itemWidth: 320
-			});
-		});*/
 	</script>
-    
 </head>
 <body>
-    <div class="bolque1">
-        <h2>Slide de ejemplo</h2>
-        <div id="slides">
-            <img src="http://lorempixel.com/640/480/sports/1">
-            <img src="http://lorempixel.com/640/480/sports/2">
-            <img src="http://lorempixel.com/640/480/sports/3">
-            <img src="http://lorempixel.com/640/480/sports/5">
-            <img src="http://lorempixel.com/640/480/sports/6">
-        </div>
-    </div>
-    
-    <div id="container">
-        <header>
-            <div id="header-content">
-                <h1><a href="#">Tosko</a></h1>	
-                <nav>
-                    <ul>
-                        <li><a href="#">Inicio</a></li>
-                        <li><a href="#">Galería</a></li>
-                    </ul>
-                </nav>
-            </div>
-        </header>
-        
-        <div id="banner">
-            <h2>Bienvenido a la web de ejemplos de JQuery!</h2>
-            <h3>Esta web va a servir como base varios ejemplos</h3>
-        </div>
-    
-        <section>
-            <h3>Galería</h3>
-            <div id="galeria">
-                <div class="flexslider">
-                    <ul class="slides">
-                        <li><img src="img/01.jpg" /></li>
-                        <li><img src="img/02.jpg" /></li>
-                        <li><img src="img/03.jpg" /></li>
-                        <li><img src="img/01.jpg" /></li>
-                        <li><img src="img/02.jpg" /></li>
-                        <li><img src="img/03.jpg" /></li>
-                    </ul>
-                </div>
-            </div>
-        </section>
-    
-    </div>
+	<div id="container">
+		<header>
+			<div id="header-content">
+				<img id="logo" src="img/Logo Tosko-01.png" alt="Logo de tosko" href="index.html">
+				<h1><a href="index.html">Tosko</a></h1>				
+				<nav>
+					<ul>						
+						<li><a href="#" id="menuAcerca">Acerca de</a></li>
+						<!--Estoy indicando que quiero desplazarme al elemento con ID galeria cuando haga clic en este elemento -->
+						<li><a href="#" onclick="$('#galeria').animatescroll({scrollSpeed:2000,easing:'easeOutBounce'});">Galería</a></li>
+						<li><a href="imageLens.html">ImageLens</a></li>
+						<li><a href="bg_index.html">Backstrech</a></li>
+						<li><a href="onePageScroll.html">One</a></li>
+						<li><a href="stellar.html">Stellar</a></li>
+						<li><a href="slidejs.html">Contacto</a></li>
+					</ul>
+				</nav>
+			</div>
+		</header>
+
+		<div id="banner">
+			<h2 id="tituloBanner">Bienvenido a la web de ejemplos de JQuery!</h2>
+			<h3>Esta web va a servir para exponer ejemplos prácticos</h3>
+		</div>
+
+		<section>
+			<h3>Acerca de</h3>
+			<div id="acercaDe">		
+					<p>Lorizzle ipsizzle dolizzle boofron daahng dawg, mofo adipiscing fizzle. Nullizzle ma nizzle velizzle, bling bling volutpat, dizzle , gravida the bizzle, arcu. Mah nizzle egizzle gangsta. Go to hizzle eros. Get down get down izzle funky fresh crazy i saw beyonces tizzles and my pizzle went crizzle gangsta gangster. Mauris pellentesque nibh et shiznit. For sure in get down get down. eleifend rhoncizzle nisi. In hizzle dizzle dictumst. Donec dapibizzle. Sure tellizzle i'm in the shizzle, pretium break it down, mattis izzle, eleifend vitae, nunc. Nizzle suscipit. Crunk sempizzle yo sizzle purizzle.</p>			
+					<p>Curabitizzle pizzle gizzle quis nisi dawg crunk. Gangster we gonna chung. Morbi odio. Vivamus neque. Cras orci. Crizzle hizzle da bomb, fo shizzle phat, feugizzle stuff amizzle, crazy izzle, go to hizzle. Fo shizzle for sure. Vestibulum bow wow wow mi, volutpat check out this, bow wow wow sizzle, adipiscing semper, velizzle. Away izzle ipsizzle. Bow wow wow volutpizzle felis vel orci. Go to hizzle quis justo in purizzle sodales ornare. tellivizzle justo sure own yo'. Nunc fizzle. Suspendisse shizzlin dizzle fizzle lacus. Curabitizzle bling bling ante. Shizzlin dizzle crackalackin, eu dapibizzle dope, hizzle felis elementum sem, gizzle aliquizzle sure felis da bomb pede. Nam a break it down. Class break yo neck, yall taciti mofo ad litora torquent per conubia nostra, pizzle its fo rizzle tellivizzle. Aliquizzle interdizzle, gangsta nizzle elementizzle hizzle, nisl orci dang sure, shizzle my nizzle crocodizzle sempizzle risizzle arcu i'm in the shizzle sem.</p>					
+					<p>Donec posuere auctizzle funky fresh. You son of a bizzle a i saw beyonces tizzles and my pizzle went crizzle check it out we gonna chung the bizzle boom shackalack. Maecenas a erizzle. Vestibulum izzle sheezy sizzle maurizzle elementum da bomb. Nunc stuff tortizzle fo shizzle mah nizzle fo rizzle, mah home g-dizzle amizzle erizzle ultrices porta. In velizzle tortor, yo mamma izzle, pizzle quizzle, adipiscing shizzlin dizzle, doggy. Etizzle away my shizz, ghetto tellivizzle, yo mamma nizzle, phat sizzle, turpis. Vivamizzle neque. Crizzle lorem. Proin vitae erat izzle libero boofron fo shizzle my nizzle. Things ac things eu pizzle ullamcorpizzle mattis. That's the shizzle fermentum sapien cool erizzle. Suspendisse crackalackin shizzle my nizzle crocodizzle, sollicitudizzle shiz, mattizzle pizzle, commodo fizzle, justo. Ghetto faucibus porttitizzle the bizzle. Nunc feugizzle, crunk nizzle phat tempizzle, sapizzle metizzle funky fresh shiz, its fo rizzle dapibus fizzle enizzle ass fo shizzle. Break yo neck, yall mah nizzle leo, imperdizzle sheezy, ghetto we gonna chung, semper dope, sapizzle. We gonna chung mollis magna vizzle ipsizzle. Sizzle nibh, suscipizzle vitae, break it down izzle, rutrum eu, gangster. Maurizzle fo shizzle fo shizzle my nizzle. Fo shizzle mah nizzle fo shizzle sizzle amet izzle pimpin' congue.</p>
+			</div>
+		</section>
+
+		<section>
+			<h3>Galería</h3>
+			<div id="galeria">
+					<ul id="fakeGallery" class="clearfix">
+						<li><img id="ima_gal" src="./img/callejon-ciudad-bangkok_53876-32359.jpg"/></li>
+						<li><img id="ima_gal" src="./img/angulo-vista-rascacielos_1359-825.jpg"/></li>
+						<li><img id="ima_gal" src="./img/tiro-escala-grises-puentes-ventanas-vidrio-que-conectan-dos-edificios-si_181624-5408.jpg"/></li>
+						<li><img id="ima_gal" src="./img/vista-cordillera-cielo-nublado_181624-28385.jpg"/></li>
+						<li><img id="ima_gal" src="./img/tiro-angulo-carretera-bosque-montanas-distancia-parque-nacional-valle-valbona-albania_181624-26176.jpg"/></li>
+						<li><img id="ima_gal" src="./img/impresionante-paisaje-amanecer-nubes_181624-29153.jpg"/></li>
+					</ul>
+					
+			</div>
+		</section>
+
+		<section>
+			<h3>Galería 2</h3>
+			<div id="galeria2">		
+				<div class="flexslider">
+					<ul class="slides">
+						<li><img src="img/callejon-ciudad-bangkok_53876-32359.jpg" /></li>
+						<li><img src="img/callejon-ciudad-bangkok_53876-32359.jpg" /></li>
+						<li><img src="img/impresionante-paisaje-amanecer-nubes_181624-29153.jpg" /></li>
+						<li><img src="img/tiro-angulo-carretera-bosque-montanas-distancia-parque-nacional-valle-valbona-albania_181624-26176.jpg" /></li>
+						<li><img src="img/tiro-escala-grises-puentes-ventanas-vidrio-que-conectan-dos-edificios-si_181624-5408.jpg" /></li>
+						<li><img src="img/vista-cordillera-cielo-nublado_181624-28385.jpg" /></li>
+					</ul>
+				</div>					
+			</div>
+		</section>
+	</div>
 </body>
 </html>

@@ -39,6 +39,26 @@ padding: 50px;
 }
 
 a {
+	text-decoration: none;
+	background: #6CF0E9;
+	border:2px solid #6CF0E9;
+	color: #ffffff;
+	border-radius: 25px;
+}
+a:hover {
+	color: #FF4AA1;
+	}
+
+/* SlidesJS */
+#slides {	
+	width: 640px;	
+}
+#slidesjs-container {	
+	margin-bottom: 50px;
+}
+p {
+	font-family: arial, helvetica;
 	color: #336699;
+	padding: 50px;
 }
 

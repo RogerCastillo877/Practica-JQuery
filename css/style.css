@@ -1,47 +1,26 @@
-/* AL conectar con estos estilos la pasarela deja de
-ser responsive, pero da la posibilidad de adaptarla */
-#slides {
-	width: 640px;
-}
-
-#slidesjs-container {	
-	margin-bottom: 50px;
-}
-
-p {
-font-family: arial, helvetica;
-color: #336699;
-padding: 50px;
-}
-
 /* Vamos a resetear unos cuantos estilos */
-
 body, div, h1, h2, h3, h4, h5, h6, p, ul, ol, li, dl, dt, dd, img, form, fieldset, input, textarea, blockquote {
 	margin: 0; padding: 0; border: 0;
 }
 
 /* Empezamos dandole color a los links que podamos poner en el documento y al hover*/
-
 a {
-	color: #2c3e50;
+	color: #72696E;
 	text-decoration: none;
 }
-
 a:hover {
-	color: #95a5a6;
+	color: #6CF0E9;
 	}
 
 /* Inicializamos unos valores básicos para tomar como base */
-
 body {
 	background: #fff;
 	font-size: 16px;
 	font-family: "Lato", sans-serif;
-	color: #888888;
+	color: #72696E;
 }
 
 /* Cabecera donde va el logo y el menu */
-
 header {
 	height: 100px;
 	width: 100%;
@@ -51,9 +30,7 @@ header {
 #header-content {
 	width: 1000px; margin: 0 auto; 
 	padding: 35px 0 0 0;
-	overflow: hidden;
 }
-
 #header-content h1 {
 	float: left;
 	font-size: 35px;
@@ -61,15 +38,17 @@ header {
 	font-family: "Kite One";
 	letter-spacing: -1px;
 }
-
-h1 > a {
-	color: #95a5a6;
+#logo {
+	width: 50px;
+    float: left;
+	margin: -2px -60px;
 }
-	
+h1 > a {
+	color: #72696E;
+}	
 #header-content nav {
 	float: right;
 }
-
 #header-content nav li {
 	text-transform: uppercase;
 	float: left;
@@ -80,33 +59,30 @@ h1 > a {
 }
 
 /* El bloque que nos sirve como presentación */
-
 #banner {
 	height: 500px;
-	background: url('../img/00.jpg');
-	background-color: #34495e;
+	background: url('../img/3260647.jpg');
+	background-color: #e2e2e2;
 	background-size: cover;
 	width: 100%;
 	margin: 0 auto;
 }
-
 #banner h2 {
 	margin: 0 auto;
 	padding-top: 170px;
-	color: #fff;
+	color: #72696E;
 	width: 800px;
 	font-size: 50px;
 	line-height: 50px;
 	text-align: center;
 	text-transform: uppercase;
 }
-
 #banner h3 {
 	margin: 0 auto;
 	padding-top: 10px;
-	color: #fff;
+	color: #72696E;
 	width: 800px;
-	font-size: 15px; 
+	font-size: 20px; 
 	font-weight: 300;
 	line-height: 60px; 
 	text-align: center;
@@ -114,14 +90,12 @@ h1 > a {
 }
 
 /* El contenedor padre de nuestros elementos */
-
 section {
 	background: #f1f1f1;
 	width: 100%; 
 }
 
-/* Los títulares que nos sirven como entradilla a cada sección */
-
+/* Los títulares que sirven como entradilla a cada sección */
 section > h3 {
  	width: 100%;
  	text-align: center;
@@ -134,20 +108,56 @@ section > h3 {
  	margin: 0 auto; 	
 }
 
-/* Estilos básicos galería*/
-
-#galeria {
-	width: 1000px; padding: 50px 0 50px 0;
+/* Estilos básicos acercaDe, galería, somos*/
+#acercaDe, #galeria, #somos {
+	width: 1000px;
+	padding: 50px 0 50px 0;
 	margin: 0 auto;
 }
-
-#galeria p {
+#acercaDe p, #galeria p {
 	margin: 0 0 30px 0;
 }
+#ima_gal {
+	width: 315px;
+	height: 215px;
+}
+li {
+	float: left;
+	margin: 0 15px 10px 0;
+	list-style-type: none;
+}
 
-/*.flexslider {
-
+/* */
+.flexslider {
 	width: 640px;
 	margin: 0 auto !important; 
+}
 
-}*/
+.flex-control-paging li a {
+    width: 11px;
+    height: 11px;
+    display: block;
+	cursor: pointer;
+    text-indent: -9999px;
+	border-radius: 20px;
+	box-shadow: inset 0 0 13px rgb(0 0 0 / 30%);
+}
+
+/* Estilos básicos imageLens*/
+#imageLens p{
+	padding: 25px 0;
+	margin: 0 auto;
+	width: 400px;
+}
+
+/**/
+.clearfix { display: inline-block; }
+
+#scrollUp {
+  	bottom: 20px;
+  	right: 20px;
+  	padding: 10px 20px;
+  	border-radius: 3px;
+  	background: #555;
+  	color: #fff;
+}
