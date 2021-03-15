@@ -1,0 +1,143 @@
+Enlaces y recursos
+
+Cargar jQuery si no se ha cargado anteriormente (por ejemplo cargar jQuery desde nuestro servidor si falla la petici—n a Google)
+http://css-tricks.com/snippets/jquery/load-jquery-only-if-not-present/
+
+Informaci—n sobre selectores en jQuery:
+http://api.jquery.com/category/selectors/ 
+
+Informaci—n sobre atributos y jQuery:
+http://api.jquery.com/attr/
+
+Informaci—n sobre la manipulaci—n:
+http://api.jquery.com/category/manipulation/
+
+Informaci—n sobre el uso de animaciones con jQuery:
+http://api.jquery.com/animate/ 
+
+Informaci—n sobre el manejo de propiedades CSS con jQuery:
+http://api.jquery.com/category/css/
+
+Recorriendo el DOM con jQuery, traversing.
+http://haystack.es/jquery/recorriendo-el-dom-con-jquery-traversing 
+
+P‡gina de recursos generales para diseño y desarrollo:
+http://www.thestarterkit.info/ 
+
+Gu’a de iniciaci—n a jQuery:
+http://designmodo.com/jquery/ 
+
+Cientos de plugins de jQuery bien organizados:
+http://www.unheap.com/ 
+
+Noticias, novedades y recursos sobre jQuery:
+http://www.jqueryrain.com/ 
+
+
+Plugins jQuery del curso
+
+
+SliderJS
+Un slider o pase de diapositivas sencillo
+http://www.slidesjs.com/ 
+
+FlexSlider
+Un slider o pase de diapositivas con un mayor nœmero de opciones de configuraci—n
+http://flexslider.woothemes.com/ 
+Plugin alternativo:
+http://dev7studios.com/nivo-slider/ 
+
+ImageLens
+Incluye un efecto lupa a tus im‡genes
+http://www.dailycoding.com/Posts/imagelens__a_jquery_plugin_for_lens_effect_image_zooming.aspx 
+
+Backstretch
+Incorpora f‡cilmente im‡genes que se adaptan autom‡ticamente al tama–o de la ventana del navegador
+http://srobbin.com/jquery-plugins/backstretch/ 
+
+ScrollUp
+Incluye de manera sencilla un bot—n para volver al top de tu p‡gina web.
+http://markgoodyear.com/2013/01/scrollup-jquery-plugin/ 
+
+AnimateScroll
+Incluiremos animaciones de scroll para desplazarnos entre secciones de una p‡gina web
+http://plugins.compzets.com/animatescroll/#
+Plugin alternativo:
+http://flesler.com/jquery/scrollTo/ 
+
+OnePageScroll
+Convierte tu p‡gina web en un gran pase de diapositivas
+http://www.thepetedesign.com/demos/onepage_scroll_demo.html
+
+Stellar.JS
+A–ade efectos parallax a tu p‡gina web
+http://markdalgleish.com/projects/stellar.js/
+
+JoyRide
+A–ade un asistente informativo a tu sitio web
+http://zurb.com/playground/jquery-joyride-feature-tour-plugin 
+
+Waypoints
+Para a–adir puntos de control a la web y disparar eventos cuando hacemos scroll
+http://imakewebthings.com/jquery-waypoints/
+
+
+Otros plugins interesantes
+
+AnimoJS
+Incluye peque–as animaciones CSS
+http://labs.bigroomstudios.com/libraries/animo-js 
+
+FlowType
+Tipograf’a responsive
+http://simplefocus.com/flowtype/ 
+
+IonSound
+Para lanzar eventos con sonidos
+http://ionden.com/a/plugins/ion.sound/en.html 
+
+Loadie
+Barra de progreso de carga
+http://9elements.github.io/loadie.js/
+
+iCheck
+Reemplazo de estilos para tus check, selectores y radio buttons.
+http://damirfoy.com/iCheck/ 
+
+Progression
+Asistente de ayuda para formularios
+http://git.aaronlumsden.com/progression/ 
+
+Parsley
+Validaci—n de formularios
+http://parsleyjs.org/documentation.html 
+
+VEX
+Cuadros de di‡logo
+http://github.hubspot.com/vex/docs/welcome/ 
+
+jQuery Autosize
+Ajusta autom‡ticamente la altura de los elementos textarea para evitar el uso de scroll
+http://www.jacklmoore.com/autosize/ 
+
+Tweetable
+Convierte autom‡ticamente los textos que quieras en enlaces para enviar a Twitter contenido.
+https://github.com/jmduke/jquery.tweetable.js 
+
+Minishare
+Incluye un sencillo bloque de iconos sociales.
+https://github.com/dwhewitson/minishare 
+
+Tips
+Un sencillo plugin para incluir tooltips customizados.
+http://www.tipue.com/tipr/ 
+
+
+
+
+
+
+
+
+
+

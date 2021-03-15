@@ -1,0 +1,60 @@
+#azul {
+
+	background-color: #3498db;
+	width: 300px;
+	height: 300px;
+	float:left;
+}
+
+#rojo {
+
+	background-color: #e74c3c;
+	width: 300px;
+	height: 300px;
+	float:left;
+
+}
+
+#verde {
+
+	background-color: #16a085;
+	width: 300px;
+	height: 300px;
+	float:left;
+
+}
+
+#amarillo {
+
+	background-color: #f1c40f;
+	width: 300px;
+	height: 300px;
+	float:left;
+}
+
+.extra {
+
+	border: 3px solid #336699;
+	width: 400px;
+	margin: 0 auto;
+}
+
+p {
+
+font-family: arial, helvetica;
+color: #fff;
+padding: 50px;
+
+}
+
+a {
+
+	color: #336699;
+}
+
+
+}
+.active {
+	
+	background-color: #e67e22;
+}

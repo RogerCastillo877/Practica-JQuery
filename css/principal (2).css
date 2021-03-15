@@ -1,0 +1,145 @@
+/* Vamos a resetear unos cuantos estilos */
+
+body, div, h1, h2, h3, h4, h5, h6, p, ul, ol, li, dl, dt, dd, img, form, fieldset, input, textarea, blockquote {
+	margin: 0; padding: 0; border: 0;
+}
+
+/* Empezamos dandole color a los links que podamos poner en el documento y al hover*/
+
+a {
+	color: #2c3e50;
+	text-decoration: none;
+}
+
+a:hover {
+	color: #95a5a6;
+	}
+
+/* Inicializamos unos valores básicos para tomar como base */
+
+body {
+	background: #fff;
+	font-size: 16px;
+	font-family: "Lato", sans-serif;
+	color: #888888;
+}
+
+/* Cabecera donde va el logo y el menu */
+
+header {
+	height: 100px;
+	width: 100%;
+	background: #ffffff;
+	z-index: 10;
+}
+#header-content {
+	width: 1000px; margin: 0 auto; 
+	padding: 35px 0 0 0;
+	overflow: hidden;
+	}
+
+#header-content h1 {
+	float: left;
+	font-size: 35px;
+	height: 60px;
+	font-family: "Kite One";
+	letter-spacing: -1px;
+	}
+
+h1 > a {
+
+	color: #95a5a6;
+}
+	
+#header-content nav {
+	float: right;
+	}
+
+#header-content nav li {
+	text-transform: uppercase;
+	float: left;
+	font-size: 16px;
+	font-weight: 100;
+	margin: 0 0 0 50px;
+	list-style: none;
+	}
+
+/* El bloque que nos sirve como presentación */
+
+#banner {
+	height: 500px;
+	background: url('../img/00.jpg');
+	background-color: #34495e;
+	background-size: cover;
+	width: 100%;
+	margin: 0 auto;
+}
+
+#banner h2 {
+	margin: 0 auto;
+	padding-top: 170px;
+	color: #fff;
+	width: 800px;
+	font-size: 50px;
+	line-height: 50px;
+	text-align: center;
+	text-transform: uppercase;
+	}
+
+#banner h3 {
+	margin: 0 auto;
+	padding-top: 10px;
+	color: #fff;
+	width: 800px;
+	font-size: 15px; 
+	font-weight: 300;
+	line-height: 60px; 
+	text-align: center;
+	text-transform: uppercase;
+	}
+
+/* El contenedor padre de nuestros elementos */
+
+section {
+	background: #f1f1f1;
+	width: 100%; 
+}
+
+/* Los títulares que nos sirven como entradilla a cada sección */
+
+section > h3
+{
+
+ 	width: 100%;
+ 	text-align: center;
+ 	font-family: "Lato";
+ 	font-size: 16px;
+ 	text-transform: uppercase;
+ 	color: #333333;
+ 	padding: 25px 0 25px 0; 
+ 	background-color: #fff;
+ 	margin: 0 auto;
+ 	
+
+}
+
+/* Estilos básicos galería*/
+
+#galeria {
+	width: 1000px; padding: 50px 0 50px 0;
+	margin: 0 auto;
+}
+
+#galeria p {
+	margin: 0 0 30px 0;
+	}
+
+/*.flexslider {
+
+	width: 640px;
+	margin: 0 auto !important; 
+
+}*/
+
+
+

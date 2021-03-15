@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicios JQuery</title>
+    <script src="js/jquery-3.6.0.min.js" type="text/javascript"></script>
+    <link rel="stylesheet" href="css/integrando_css.css">
+
+
+    <script type="text/javascript">
+
+        //Estoy indicando que quiero esperar a que todo el documento esté cargado para poder trabajar con mis funciones.
+        $(document).ready(function()
+        {
+        // Guardo en una variable el atributo HREF del elemento a incluido en el elemento con ID verde.	
+        var $miUrl = $('#verde a').attr('href');
+        
+        // Empleo la variable anterior para sacar por consola del navegador el resultado de la acción anterior.
+        console.log($miUrl);
+
+        // Selección el elemento a incluido en el elemento con ID verde y añado el atributo tittle con el valor "esto sería un enlace a Twitter"
+        $('#verde a').attr('title','Esto sería un enlace a Twitter');
+
+        
+        // Guardo en una variable el atributo HREF del elemento a incluido en el elemento con ID amarillo.
+        var $urlAnterior = $('#amarillo a').attr('href');
+        
+        // Añado el atributo HREF o modifico el que ya tuviera el elemento seleccionado.
+        $('#amarillo a').attr('href','http://www.minijuegos.com');
+       
+        // Incluyo el texto al elemento seleccionado
+        $('#amarillo a').text('enlace a minijuegos');
+        
+        // Inclyo justo después del último párrafo incluido en el elemento con ID amarillo una información que me indica cuál era el valor inicial del atributo HREF. Lo incluyo mediante una variable definida en un primer momento.
+        $('#amarillo p:last').append('<strong>La dirección anterior del link era <strong>' + $urlAnterior);
+        });
+
+    </script>
+
+</head>
+<body>
+    <div id="azul">
+        <p>Esto sería un <a href="http://www.video2brain.com">enlace a video2brain</a></p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque congue pellentesque ipsum ac accumsan. Curabitur vehicula laoreet neque vitae tincidunt. Nunc accumsan in nibh ut convallis. Nam non euismod diam, fringilla ullamcorper turpis. </p>
+    </div>
+    
+    <div id="rojo">
+        <p>Esto sería un <a href="http://www.google.com">enlace a google</a></p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque congue pellentesque ipsum ac accumsan. Curabitur vehicula laoreet neque vitae tincidunt. Nunc accumsan in nibh ut convallis. Nam non euismod diam, fringilla ullamcorper turpis. </p>
+    </div>
+    
+    <div id="verde">
+        <p>Esto sería un <a href="http://www.twitter.com">enlace a twitter</a></p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque congue pellentesque ipsum ac accumsan. Curabitur vehicula laoreet neque vitae tincidunt. Nunc accumsan in nibh ut convallis. Nam non euismod diam, fringilla ullamcorper turpis. </p>
+    </div>
+    
+    <div id="amarillo">
+        <p>Esto sería un <a href="http://www.facebook.com">enlace a facebook</a></p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque congue pellentesque ipsum ac accumsan. Curabitur vehicula laoreet neque vitae tincidunt. Nunc accumsan in nibh ut convallis. Nam non euismod diam, fringilla ullamcorper turpis. </p>
+    </div>
+
+</body>
+</html>

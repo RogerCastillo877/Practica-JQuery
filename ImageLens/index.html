@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Ejemplo ejercicio</title>
+        <meta name="description" content="">
+
+
+        <link rel="stylesheet" href="css/principal.css">
+        <link href='http://fonts.googleapis.com/css?family=Lato:300,400,700|Kite+One' rel='stylesheet' type='text/css'>
+
+		<script src="js/jquery-1.10.2.min.js"></script>
+		<script src="js/jquery.imageLens.js"></script>
+
+		<script>
+		
+		$(document).ready(function(){
+
+			$("#ejemplo").imageLens();
+			$("#ejemplo1").imageLens({ lensSize: 300 });
+			$("#ejemplo2").imageLens({ imageSrc: "img/02.jpg", lensSize: 120 });
+			
+		
+		});	
+		</script>
+
+     </head>
+
+<body>
+
+<div id="container">
+	<header>
+		<div id="header-content">
+			<h1><a href="#">Mi logo</a></h1>
+			
+			<nav>
+				<ul>
+					<li><a href="#">Inicio</a></li>
+					<li><a href="#">ImageLens</a></li>
+				</ul>
+			</nav>
+		</div>
+	</header>
+	
+	<div id="banner">
+		<h2>Bienvenido a la web de ejemplo!</h2>
+		<h3>Esta web va a servir como base para los ejemplos chulos</h3>
+	</div>
+	<section>
+	<h3>Mi imageLens</h3>
+	<div id="imageLens">
+
+			<p><img id="ejemplo" src="img/01.jpg" width="400" height="250" /></p>
+			<p><img id="ejemplo1" src="img/01.jpg" width="400" height="250" /></p>
+			<p><img id="ejemplo2" src="img/01.jpg" width="400" height="250" /></p>
+	
+	</div>
+
+	
+			
+	</div></section>
+
+</div>
+
+
+
+</body></html>

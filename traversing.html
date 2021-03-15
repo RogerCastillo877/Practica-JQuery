@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejemplo ejercicio</title>
+    <meta name="description" content="">
+    <link rel="stylesheet" href="css/traversing.css">
+    <script src="js/jquery-3.6.0.min.js" type="text/javascript"></script>
+    <script type="text/javascript">
+
+        $(document).ready(function(){
+ 
+         //El hijo de Mateo es
+        console.log($('.Mateo').children());
+ 
+        //Mateo es hermano de
+        console.log($('.Mateo').siblings());
+ 
+        //El padre de mateo es
+        console.log($('.Mateo').parent());
+ 
+        //¿Quién está colocado antes que Juan?
+        console.log($('.Juan').prev());
+ 
+        //¿y justo después?
+        console.log($('.Juan').next());
+ 
+         //Pero hay más personas, ¿cuáles son todas?
+        console.log($('.Juan').nextAll());
+ 
+        //Quiero seleccionar solo los elementos que sean un objeto, cuáles son?
+        console.log($('.familia').find('.objeto'));
+ 
+        //Quiero seleccionar el último de los elementos que sean un objeto, cuál es?
+        console.log($('.objeto').last());
+ 
+        //Quiero seleccionar todos los hijos
+        console.log($('.hijo'));
+    });
+    </script>
+
+</head>
+<body>
+    <div class="familia">
+        
+        <div class="Antonia humano mujer"></div>
+        
+        <div class="Juan humano hombre"> 
+            <div class="Mateo humano hombre">
+                <div class="Luis humano hijo hombre">
+                    <span class="peluche objeto"></span>
+                </div>
+            </div>
+        </div>
+
+        <div class="Lucia humano mujer"></div>
+            <span class="secador objeto"></span>
+            <span class="peine objeto"></span>
+        <div class="Fernando humano hombre"></div>
+        </div>
+    </div>
+
+</body>
+</html>

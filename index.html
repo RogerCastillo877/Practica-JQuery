@@ -4,10 +4,112 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ejercicios JQuery</title>
-    <script src="js/jquery-3.6.0.min.js" type="text/javascript"></script>
+    <title>Ejercicios con diferentes plugging</title>
+    <meta name="description" content="">
+
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/flexslider.css">
+    <script src="js/jquery-1.10.2.min.js"></script>
+    <script src="js/jquery.slides.min.js"></script>
+    <script src="js/jquery.flexslider-min.js"></script>
+    
+    <!-- Script para la pasarela de imágenes -->
+    <script>
+        $(document).ready(function(){    
+            /* Se agrega paginación y botones de navegación automáticamente, además es responsive */
+            /*$("#slides").slidesjs({
+                width: 640,
+                height: 480
+            });*/
+            /* Se pueden manipular argumento se anula la paginación y se agrega un efecto */
+           /* $("#slides").slidesjs({
+                width: 640,
+                height: 480,
+                pagination: false,
+                navigation: {
+                    effect: "fade"
+                }
+            });*/
+            /* Se añade un intervalo automático */
+            $("#slides").slidesjs({
+                width: 640,
+                height: 480,
+                play: {
+                    auto: true,
+                    interval: 5000,
+                    effect: "fade"    
+                },
+                pagination: false,
+                navigation: {
+                    effect: "fade"
+                }
+            });
+        });
+    </script>
+
+    <!---->
+    <script>
+		$(window).load(function() {
+			$('.flexslider').flexslider({
+			animation: "slide"
+			});
+		});
+
+		/*$(window).load(function() {
+			$('.flexslider').flexslider({
+			animation: "slide",
+			itemWidth: 320
+			});
+		});*/
+	</script>
+    
 </head>
 <body>
+    <div class="bolque1">
+        <h2>Slide de ejemplo</h2>
+        <div id="slides">
+            <img src="http://lorempixel.com/640/480/sports/1">
+            <img src="http://lorempixel.com/640/480/sports/2">
+            <img src="http://lorempixel.com/640/480/sports/3">
+            <img src="http://lorempixel.com/640/480/sports/5">
+            <img src="http://lorempixel.com/640/480/sports/6">
+        </div>
+    </div>
     
+    <div id="container">
+        <header>
+            <div id="header-content">
+                <h1><a href="#">Tosko</a></h1>	
+                <nav>
+                    <ul>
+                        <li><a href="#">Inicio</a></li>
+                        <li><a href="#">Galería</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+        
+        <div id="banner">
+            <h2>Bienvenido a la web de ejemplos de JQuery!</h2>
+            <h3>Esta web va a servir como base varios ejemplos</h3>
+        </div>
+    
+        <section>
+            <h3>Galería</h3>
+            <div id="galeria">
+                <div class="flexslider">
+                    <ul class="slides">
+                        <li><img src="img/01.jpg" /></li>
+                        <li><img src="img/02.jpg" /></li>
+                        <li><img src="img/03.jpg" /></li>
+                        <li><img src="img/01.jpg" /></li>
+                        <li><img src="img/02.jpg" /></li>
+                        <li><img src="img/03.jpg" /></li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+    
+    </div>
 </body>
 </html>
